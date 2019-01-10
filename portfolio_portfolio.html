@@ -1,0 +1,86 @@
+<style>
+	html, body{
+		width: 100%;
+		height: 100%;
+	}
+	
+	#midden_links{
+			background-color: black;
+			color: white;
+			font-size: 12rem;
+			font-style: italic;
+			font-family: monospace;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 300%;   
+		}
+	
+	#midden_rechts{
+			background-color: black;
+			color: white;	
+			font-size: 12rem;
+			font-style: italic;
+			font-family: monospace;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 300%; 
+		}	
+	
+	.col-4 #tekstvak{
+			background-color: black;
+			color: white;
+			text-align: center;
+			padding-top: 20%; 
+	}
+	
+	.col-4{
+		background-color: black;
+	}
+	
+	
+	#tekst{
+		margin-top: 20%;	
+	}
+	
+	.gemaakte_opdrachten{
+		
+	}
+	#button_een, #button_twee, #button_drie{
+		background-color: white;
+		border: 1px white dashed;
+		cursor: pointer;
+		margin: 0;
+	}
+	
+	
+	
+
+</style>
+<div class="col-2" id="midden_links">W</div>
+<div class="col-4">
+	<div id="tekstvak">
+	Ik doe deze opleiding met veel plezier en ik doe steeds meer ervaringen op met programmeren en projectgericht werken.<br>
+Op het moment werk ik veel met de onderstaande talen: <br><br><br>
+	
+	<img src="images/vakken.png"><br>
+	
+Ik krijg deze talen steeds meer onder de knie en hoop in de toekomst iets met deze talen te gaan doen.
+	</div>
+</div> 
+<div class="col-4" id="content">
+	<h3 id="tekst">
+		Hier staan 3 opdrachten van mij die ik gemaakt heb en waar ik zelf zeer tevreden over ben.<br><br><br>
+	</h3>
+	<div class="gemaakte_opdrachten">
+		<button onclick="laadOpdrachtEen()" id="button_een">Pythagoras Extra Opdracht. <br> Samen gemaakt met Melvin.</button><br><br>
+		<button onclick="laadOpdrachtTwee()" id="button_twee">Dit was een opdracht in de les van Webprogramming. <br>
+			Deze opdracht laat zien dat ik goed met Arrays overweg kan.
+		</button><br><br>
+		<button onclick="laadOpdrachtDrie()" id="button_drie">Dit is een opdracht met JSON. <br>
+			Dit laat zien dat ik ook JSON files kan inlezen.
+		</button>
+		
+	</div>
+</div> 
+<div class="col-2" id="midden_rechts">K</div> 
+

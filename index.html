@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8">
+        <title>Wesley Keiman - Portfolio</title>
+        <style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		.row::after {
+			content: "";
+			clear: both;
+			display: block;
+		}
+		[class*="col-"] {
+			float: left;
+			padding: 1px 0;
+			border: 1px solid black;
+		}
+			.col-1 {width: 8.33%;}
+			.col-2 {width: 16.66%;}
+			.col-3 {width: 25%;}
+			.col-4 {width: 33.33%;}
+			.col-5 {width: 41.66%;}
+			.col-6 {width: 50%;}
+			.col-7 {width: 58.33%;}
+			.col-8 {width: 66.66%;}
+			.col-9 {width: 75%;}
+			.col-10 {width: 83.33%;}
+			.col-11 {width: 91.66%;}
+			.col-12 {width: 100%;}
+		html {
+			font-family: "Lucida Sans", sans-serif;
+			height: 100%;
+			width: 100%;
+		}
+			
+		body{
+			height: 100%;
+			height: 100%;
+		}
+		.header {
+			background-color: #9933cc;
+			color: #ffffff;
+		}
+		.menu ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.menu li {
+			padding: 1%;
+			background-color: #III;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			width: 25%;
+			float: left;
+			margin: auto;
+			
+		}
+		.menu li:hover {
+			background-color: white;
+			
+		}
+			
+		.menu li:hover a {
+			color: black;
+			
+		}
+		
+		.menu ul li{
+			display: inline-block;
+		}
+			
+			
+		.menu ul li a{
+			text-decoration: none;
+			color: white;
+			display: inline-block;
+		 	padding: 4px;
+		}
+		
+		.large-height{
+			height: 86%;
+		}	
+		.large-height .col-1, .large-height .col-3, .large-height .col-5, .large-height .col-2, .large-height .col-8, .large-height .col-4{
+			height: 100%;	
+		}
+			
+		.large-height .col-5{
+			line-height: 3000%;	
+		}
+		.bottom-height{
+			height: 7%;
+			text-align: center;
+			line-height: 300%;
+		}
+			
+		.bottom-height .col-12{
+			height: 100%;	
+		}
+		
+		.top-height{
+			height: 7%;	
+		}
+		
+		.top-height .col-2, .col-8{
+			height: 100%;	
+		}
+		
+		#plaatje{
+			width: 100%;
+			height: 100%;
+		}
+			
+		#onderkant{
+			background-color: black;
+			color: white;
+		}
+			
+		#midden_links{
+			background-color: black;
+			color: white;
+			font-size: 12rem;
+			font-style: italic;
+			font-family: monospace;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 300%;   
+		}
+			
+		#midden_rechts{
+			background-color: black;
+			color: white;	
+			font-size: 12rem;
+			font-style: italic;
+			font-family: monospace;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 300%;  
+		}
+	
+		#boven_links{
+			background-color: black;
+		}
+			
+		#boven_rechts{
+			background-color: black;
+		}
+			
+		#boven_midden{
+			background-color: black;
+		}
+			
+		#content{
+			color: white;
+			background-color: black;
+		}
+	
+		#foto_beginpagina{
+			background-color: black;	
+		}
+			
+		#leegmiddenstuk_beginpagina{
+			background-color: black;	
+		}
+			
+		#tekst_beginpagina{
+			color: white;
+			margin-top: 40%;
+		}
+			
+		#content_rechts{
+			background-color: black;	
+		}
+			
+		</style>
+    </head>
+    <body>
+		<div class="row top-height">
+		  <div class="col-2" id="boven_links"></div> 
+		  <div class="col-8" id="boven_midden">
+			<nav class="menu">
+			  <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" onclick="laadwieBenIk();">Wie ben ik?</a></li>
+				<li><a href="#" onclick="laadPortfolio();">Portfolio</a></li>
+				<li><a href="#" onclick="laadContact();">Contact</a></li>
+			  </ul>
+			</nav>
+		  </div>
+		  <div class="col-2" id="boven_rechts"></div> 
+		 </div>
+		
+		
+		<div class="row large-height" id="midden">
+			<div class="col-2" id="midden_links">W</div> 
+			<div class="col-3" id="foto_beginpagina">
+				<img src="images/welcome.png" id="plaatje">
+			</div>
+			<div class="col-1" id="leegmiddenstuk_beginpagina">
+				<img src="images/middenstuk.png">
+			</div> 
+			<div class="col-4" id="content_rechts">
+				<h3 id="tekst_beginpagina">
+					Welkom op mijn Portfolio website, gemaakt door Wesley Keiman, 1e jaars student aan het ROC in Nieuwegein.
+				</h3>
+			</div>
+			<div class="col-2" id="midden_rechts">K</div>
+			
+		</div>
+		
+		
+		
+		<div class="row bottom-height">
+			<div class="col-12" id="onderkant">Copyright © Wesley Keiman 2017</div>
+		</div>
+		
+		<script>
+			function laadContact(){
+				var xhr = new XMLHttpRequest();
+				xhr.open("GET", "portfolio_contact.html", false);
+				xhr.send();
+				
+				var content = xhr.responseText;
+				document.getElementById("midden").innerHTML = content;
+			}
+			
+			function laadwieBenIk(){
+				var xhr = new XMLHttpRequest();
+				xhr.open("GET", "portfolio_wie_ben_ik.html", false);
+				xhr.send();
+				
+				var content = xhr.responseText;
+				document.getElementById("midden").innerHTML = content;
+			}
+			
+			function laadPortfolio(){
+				var xhr = new XMLHttpRequest();
+				xhr.open("GET", "portfolio_portfolio.html", false);
+				xhr.send();
+				
+				var content = xhr.responseText;
+				document.getElementById("midden").innerHTML = content;
+			}
+			
+			 function laadOpdrachtEen(){
+				 //window.location.href = "http://localhost/Extra%20opdrachten/";
+				 window.open("http://werk-wesley-1997.16mb.com/", '_blank');
+			 }
+			
+			function laadOpdrachtTwee(){
+				 window.open("http://werk-wesley-1997.16mb.com/Array_in_div_Wesley_4A6B.html", '_blank');
+			}
+			
+			function laadOpdrachtDrie(){
+				window.open("http://werk-wesley-1997.16mb.com/les1_huisdieren_1_als_tekst.html", '_blank');
+				
+			}
+            
+            
+        </script>
+    </body>
+</html>
